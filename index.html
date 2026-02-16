@@ -1,78 +1,75 @@
-code
-Html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caroline Venancio Santos | Architect & Designer</title>
-    <!-- We use "Inter" for that clean, architectural look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Caroline VS | Architect & Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header & Navigation -->
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">CAROLINE VENANCIO SANTOS</a>
-            <nav>
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar">
+        <a href="index.html" class="logo">CVS<span>©</span></a>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:hello@carolinevs.com" class="nav-cta">Let's Talk</a>
         </div>
-    </header>
+    </nav>
 
-    <main>
+    <main class="container">
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Designing spaces with <br><span class="italic">clarity and soul.</span></h1>
-            <p>Architecture & interior design that brings ideas to life — from concept to execution. Based in Berlin, working globally.</p>
-            <a href="#portfolio" class="cta-button">Explore Portfolio</a>
+            <h1>Architecting <span class="outline">Spaces</span> & <br>Interior Narratives.</h1>
+            <p>Based in Berlin. Specialized in minimalist residential design and functional aesthetics.</p>
         </section>
 
-        <!-- Portfolio Grid -->
-        <section id="portfolio" class="portfolio">
-            <h2 class="section-title">Selected Works</h2>
-            <div class="grid">
-                <!-- Project 1 -->
-                <div class="project">
-                    <img src="images/project1.jpg" alt="Project Name">
-                    <div class="project-info">
-                        <h3>Residential Renovation</h3>
-                        <p>Berlin, Germany</p>
+        <!-- Bento Grid / Portfolio -->
+        <section id="work" class="work-grid">
+            
+            <!-- Large Project Card -->
+            <div class="card tall" style="background-image: url('images/project1.jpg');">
+                <div class="card-overlay">
+                    <div class="card-details">
+                        <span>Residential</span>
+                        <h3>Berlin Loft</h3>
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="project">
-                    <img src="images/project2.jpg" alt="Project Name">
-                    <div class="project-info">
-                        <h3>Custom Furniture Design</h3>
-                        <p>Concept</p>
-                    </div>
-                </div>
-                <!-- Add more project divs here -->
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="about-content">
-                <h2>About</h2>
-                <p>Architect and interior designer with a practical and detail-oriented approach, focused on creating efficient and meaningful spaces. Focused on balancing function and aesthetics, adapting skills from Brazil to an international context in Berlin.</p>
+            <!-- Square Project Card -->
+            <div class="card" style="background-image: url('images/project2.jpg');">
+                <div class="card-overlay">
+                    <div class="card-details">
+                        <span>Interior</span>
+                        <h3>Minimal Kitchen</h3>
+                    </div>
+                </div>
             </div>
+
+            <!-- Another Card -->
+            <div class="card" style="background-image: url('images/project3.jpg');">
+                <div class="card-overlay">
+                    <div class="card-details">
+                        <span>Concept</span>
+                        <h3>Urban Pavilion</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- "About Me" Card (Fylla Style) -->
+            <div class="card info-card">
+                <h3>About</h3>
+                <p>Architect and interior designer bringing a Brazilian soul to Berlin's structural clarity.</p>
+                <a href="#about" class="arrow-link">→</a>
+            </div>
+
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>© 2025 Caroline Venancio Santos</p>
-            <p><a href="mailto:hello@carolinevs.com">hello@carolinevs.com</a></p>
-        </div>
+        <p>Built by Caroline VS — 2025</p>
     </footer>
 
 </body>
